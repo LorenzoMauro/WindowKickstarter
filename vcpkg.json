@@ -1,0 +1,14 @@
+{
+  "name": "MyProject",
+  "version": "0.1.0",
+  "dependencies": [
+    {
+      "name": "glfw3",
+      "default-features": true
+    },
+    {
+      "name": "glad"
+    }
+
+  ]
+}

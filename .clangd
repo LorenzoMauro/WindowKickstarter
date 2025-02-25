@@ -1,0 +1,53 @@
+Diagnostics:
+  UnusedIncludes: Strict
+  ClangTidy:
+    Add: [
+      readability-*,
+      performance-*,
+      bugprone-*,
+      readability-identifier-naming,
+      modernize-*,
+      cppcoreguidelines-*,
+      misc-*,
+      cert-*,
+      hicpp-*,
+    ]
+    Remove: [
+      modernize-use-trailing-return-type,
+      hicpp-vararg,
+      cppcoreguidelines-pro-type-vararg,
+    ]
+    CheckOptions:
+        readability-identifier-naming.ClassCase : CamelCase
+        readability-identifier-naming.StructCase : CamelCase
+        readability-identifier-naming.ConceptCase : lower_case
+        readability-identifier-naming.EnumCase : lower_case
+        readability-identifier-naming.UnionCase : lower_case
+        readability-identifier-naming.TemplateParameterCase : UpperCamelCase
+        readability-identifier-naming.ParameterCase : camelBack
+        readability-identifier-naming.LocalVariableCase : camelBack
+        readability-identifier-naming.GlobalVariableCase : gUpperCamelCase
+        readability-identifier-naming.GlobalFunctionCase : lowerCamelCase
+        readability-identifier-naming.GlobalFunctionIgnoredRegexp : '^(anyhit|ragen|closesthit)$'
+        readability-identifier-naming.ClassMethodCase : camelBack
+        readability-identifier-naming.StructMethodCase : camelBack
+        readability-identifier-naming.ClassFieldCase : all_lower_
+        readability-identifier-naming.StructFieldCase : all_lower_
+        readability-identifier-naming.PublicMemberCase : camelBack
+        readability-identifier-naming.UnionMemberCase : all_lower
+        readability-identifier-naming.EnumConstantCase : all_lower
+        readability-identifier-naming.ConstantCase : all_lower
+        readability-identifier-naming.NamespaceCase : all_lower
+        readability-identifier-naming.TypedefCase : all_lower
+        readability-identifier-naming.MacroDefinitionCase : ALL_UPPER
+        readability-identifier-naming.PropertyCase : UpperCamelCase
+        readability-identifier-naming.EventCase : UpperCamelCase
+
+Index:
+  Background: Build
+
+Hover:
+  ShowAKA: true
+
+Completion:
+  AllScopes: true
