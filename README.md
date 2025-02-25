@@ -1,5 +1,8 @@
-# WindowKickstarter
+
 **This is a GitHub template repository.** Click "Use this template" to create a new project based on this setup.
+
+# WindowKickstarter
+
 A minimal CMake-based starter project for cross-platform window creation using GLFW, GLAD, and OpenGL.  
 
 - [Features](#features)
